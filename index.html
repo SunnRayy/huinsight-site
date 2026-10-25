@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Huinsight 慧眼</title>
+<meta name="description" content="The self-hosted portfolio tracker for people whose money doesn't stay in one country.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M8 56 Q50 8 92 56 Q50 96 8 56Z' fill='none' stroke='%233b82f6' stroke-width='8'/%3E%3Ccircle cx='50' cy='56' r='20' fill='%233b82f6'/%3E%3Ccircle cx='50' cy='56' r='6' fill='%230B0E14'/%3E%3C/svg%3E">
+<style>
+/* Hallmark · placeholder for huinsight.com until the product site is published · genre: modern-minimal · theme: Dusk tokens, Huinsight palette (round 8) · one wordmark, one line in two languages, one action · system fonts only, no external requests */
+/* Hallmark · waive 74 · #3b82f6 is the product's own color-primary (ux-command-center), so the placeholder matches the app · palette by request, round 8 */
+/* Hallmark · waive 77 · one screen: the wordmark, the tagline in two languages, one GitHub action · a holding page for the domain until the product site is published, not a landing page */
+:root {
+  color-scheme: dark;
+  --color-paper: #0B0E14;
+  --color-ink: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-accent: #3b82f6;
+  --color-accent-hi: #60a5fa;
+  --color-accent-ink: #0b1220;
+  --color-focus: #60a5fa;
+  --accent-wash: rgba(59, 130, 246, 0.16);
+  --font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px;
+  --gutter: 24px;
+  --radius-pill: 999px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+@media (max-width: 40rem) { :root { --gutter: 16px; } }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { overflow-x: clip; }
+html { scrollbar-color: var(--color-muted) var(--color-paper); }
+::selection { background: var(--accent-wash); color: var(--color-ink); }
+body {
+  min-height: 100vh; min-height: 100dvh;
+  display: grid; place-items: center;
+  padding: var(--space-xl) var(--gutter);
+  background: var(--color-paper); color: var(--color-ink);
+  font-family: var(--font-body); line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+main { max-width: 36rem; display: grid; gap: var(--space-lg); justify-items: start; }
+h1 { display: flex; align-items: center; gap: var(--space-sm); font-size: clamp(2rem, 4vw + 1rem, 3rem); font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; text-wrap: balance; }
+h1 svg { width: 1.1em; height: 1.1em; flex: none; }
+p { font-size: 1.125rem; color: var(--color-ink); text-wrap: pretty; }
+p[lang="zh-CN"] { color: var(--color-muted); word-break: keep-all; overflow-wrap: break-word; }
+a {
+  display: inline-flex; align-items: center; min-height: 48px; padding: 0 var(--space-lg);
+  border-radius: var(--radius-pill); background: var(--color-accent); color: var(--color-accent-ink);
+  font-weight: 600; text-decoration: none;
+  transition: background-color 220ms var(--ease-out), box-shadow 220ms var(--ease-out), transform 120ms var(--ease-out);
+}
+a:hover { background: var(--color-accent-hi); box-shadow: 0 0 0 4px var(--accent-wash); }
+a:active { transform: translateY(1px); }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { a { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <h1><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M8 56 Q50 8 92 56 Q50 96 8 56Z" fill="none" stroke="#3b82f6" stroke-width="8"/><circle cx="50" cy="56" r="20" fill="#3b82f6"/><circle cx="50" cy="56" r="6" fill="#0B0E14"/></svg>Huinsight 慧眼</h1>
+  <p>The self-hosted portfolio tracker for people whose money doesn’t stay in one country.</p>
+  <p lang="zh-CN">写给<wbr>资产<wbr>不只<wbr>待在<wbr>一个<wbr>国家的人的<wbr>自托管<wbr>投资组合<wbr>追踪器。</p>
+  <a href="https://github.com/SunnRayy/huinsight">View on GitHub</a>
+</main>
+</body>
+</html>
